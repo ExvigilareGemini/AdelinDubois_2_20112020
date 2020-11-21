@@ -1,0 +1,48 @@
+body {
+    margin: 0 0 0 0;
+}
+
+
+
+.hebergement {
+    display: flex;
+    background-color: springgreen;
+    height : 626px;
+}
+
+.container_hebergement {
+    display: flex;
+    background-color: slateblue;
+    margin-left: 3.5%;
+    width: 61.14%;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-content: space-around;
+}
+
+.container_populaire {
+    background-color: teal;
+    margin-left: 2.7%;
+    width: 29.16%;
+}
+
+.flex_line {
+    width: 100%;
+    background-color: violet;
+    margin-left: 2.7%;
+}
+
+.border_round {
+    border-radius: 20px;
+}
+
+.pin {
+    background-color: salmon;
+    width : 28%;
+    height: 31.9%;
+}
+
+.pin_2 {
+    background-color: tomato;
+}
