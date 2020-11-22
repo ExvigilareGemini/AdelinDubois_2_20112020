@@ -1,25 +1,57 @@
 body {
     margin: 0 0 0 0;
+    font-family: 'Raleway', sans-serif;
+    /* background-image: url(./src/img/canvas/Desktop\ -\ 1.png); */
 }
 
+
+/* // __________________________________________________________________________________________________________________________________________________ //
+//                                                      SECTIONS                                                                       
+// __________________________________________________________________________________________________________________________________________________ // */
 
 
 .hebergement {
     display: flex;
-    background-color: springgreen;
-    height : 626px;
+    min-height : 626px;
+    
+
+    /* A SUPPRIMER */
+    margin-top: 21px;
+    opacity: 1;
 }
 
+/* // __________________________________________________________________________________________________________________________________________________ //
+//                                                      CONTAINERS                                                                       
+// __________________________________________________________________________________________________________________________________________________ // */
+
+/*********HEBERGEMENT************/
+
 .container_hebergement {
-    display: flex;
-    background-color: slateblue;
     margin-left: 3.5%;
-    width: 61.14%;
-    flex-direction: row;
+    max-width: 880px;
+    background-color: #F2F2F2;
+}
+
+.container_hebergement_titre {
+    height: 14.6%;
+}
+
+.container_hebergement_pin {
+    display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
-    align-content: space-around;
+    align-items: start;
+    margin: 0 24.5px 0 24.5px;
+    height: 73%;
 }
+
+.container_herbergement_affPlus {
+    height: 12.4%;
+}
+
+
+
+
 
 .container_populaire {
     background-color: teal;
@@ -27,22 +59,127 @@ body {
     width: 29.16%;
 }
 
-.flex_line {
-    width: 100%;
-    background-color: violet;
-    margin-left: 2.7%;
+
+
+/* // __________________________________________________________________________________________________________________________________________________ //
+//                                                      PINS                                                                       
+// __________________________________________________________________________________________________________________________________________________ // */
+
+
+.pin_hebergement {
+    background-color: white;
+    width : 246px;
+    /* height: 31.9%; */
+    height: 199.5px;
+    box-shadow: 5px 5px 18px  rgba(0, 0, 0, 0.1);
 }
+
+.pin_populaire {
+    background-color: tomato;
+}
+
+.cadre{
+    overflow: hidden;
+    background-color: teal;
+    margin: 2% 2% 0 2%;
+    border-radius: 15px 15px 0 0;
+    height: 119px;
+    position: relative;
+    width: 235px;
+}
+
+.cadre img {
+  position: absolute;
+  top: 0px;
+  bottom: 0px;
+  left: 0px;
+  right: 0px;
+  margin: auto;
+  width: 250px;
+}
+
+@media screen and (max-width : 700px) {
+    body {background-color: white;}
+}
+
+.pin_hebergement h4 {
+    padding-left: 15px;
+    font-size: 16.4px;
+    margin: 10px 0 0 0;
+}
+
+.pin_hebergement p {
+    padding-left: 15px;
+    font-size: 14px;
+    margin: 5px 0 0 0;
+}
+
+.stars {
+    padding-left: 15px;
+    margin-top: 6px;
+    font-size: 12px;
+}
+
+.fas {
+    letter-spacing: -3px;
+}
+/* // __________________________________________________________________________________________________________________________________________________ //
+//                                                      EFFETS VISUELLES                                                                       
+// __________________________________________________________________________________________________________________________________________________ // */
+
 
 .border_round {
     border-radius: 20px;
 }
-
-.pin {
-    background-color: salmon;
-    width : 28%;
-    height: 31.9%;
+.checked{
+    color : #0065FC;
+}
+.unchecked {
+    color :  #F2F2F2;
 }
 
-.pin_2 {
-    background-color: tomato;
+/* // __________________________________________________________________________________________________________________________________________________ //
+//                                                      EFFETS DE TEXTE                                                                       
+// __________________________________________________________________________________________________________________________________________________ // */
+
+.titre_hebergement {  
+    font-size: 22.4px;
+    font-weight: bold;
+    margin-top: 0;
+    padding: 42px 0 0 40px;
+}
+
+.affplus {
+    font-weight: bolder ;
+    font-size: 19px;
+    margin-top: 0;
+    padding: 11px 0 0 42px;
+}
+
+.filtre_selection {
+    display: flex;
+    flex-direction: row;
+    border-radius: 50px;
+    border: 2px solid white;
+    width: 250px;
+    height: 40px;
+    padding: 0 0 0 0;
+    align-items: center;
+}
+
+.filtre_selection > .icon {
+    background-color: cyan;
+    border-radius: 100%;
+    width : 35px;
+    height: 36px;
+    
+    
+}
+
+.filtre_selection > .icon > i {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 36px;
+    font-size: 15px;
 }

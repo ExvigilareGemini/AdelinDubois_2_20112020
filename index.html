@@ -5,6 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="./style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@500&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/d9919cf935.js" crossorigin="anonymous"></script>
 </head>
 <body>
 
@@ -35,10 +38,12 @@
         <button>Rechercher</button>
 
         <p>Filtres</p>
-            <div class="filtre_selection">
-                <span class="icon_economique"></span>
+            <button class="filtre_selection">
+                <div class="icon">
+                    <i class="fas fa-dog"></i>
+                </div>
                 <p>Economique</p>
-            </div>
+            </button>
             <div class="filtre_selection">
                 <span class="icon_familial"></span>
                 <p>Familial</p>
@@ -58,112 +63,150 @@
     </section>
 
     <!-- Section Hebergement -->
-
     <section class="hebergement">
 
+        
         <div class="container_hebergement border_round">
-            <h2 class="flex_line">Hébergement à Marseille</h2>
-            <div class="pin border_round">
-                <img src="#" alt="">
-                <h3>Auberge la Cannebière</h3>
-                <p>Nuit à partir de <b>25€</b> </p>
-                <span class="star checked"></span>
-                <span class="star checked"></span>
-                <span class="star checked"></span>
-                <span class="star checked"></span>
-                <span class="star"></span>
+
+            <!-- FlexBox titre hebergement -->
+            <div class="container_hebergement_titre">
+                <h3 class="titre_hebergement align_flex">Hébergements à Marseille</h3>
             </div>
-            <div class="pin border_round">
-                <img src="#" alt="">
-                <h3>Hôtel du port</h3>
-                <p>Nuit à partir de 52€</p>
-                <span class="star checked"></span>
-                <span class="star checked"></span>
-                <span class="star checked"></span>
-                <span class="star checked"></span>
-                <span class="star checked"></span>
-            </div>
-            <div class="pin border_round">
-                <img src="#" alt="">
-                <h3>Hôtel les mouettes</h3>
-                <p>Nuit à partir de 76€</p>
-                <span class="star checked"></span>
-                <span class="star checked"></span>
-                <span class="star checked"></span>
-                <span class="star checked"></span>
-                <span class="star"></span>
-            </div>
-            <div class="pin border_round">
-                <img src="#" alt="">
-                <h3>Hôtel de la mer</h3>
-                <p>Nuit à partir de 46€</p>
-                <span class="star checked"></span>
-                <span class="star checked"></span>
-                <span class="star checked"></span>
-                <span class="star"></span>
-                <span class="star"></span>
-            </div>
-            <div class="pin border_round">
-                <img src="#" alt="">
-                <h3>Auberge Le Panier</h3>
-                <p>Nuit à partir de <b>23€</b></p>
-                <span class="star checked"></span>
-                <span class="star checked"></span>
-                <span class="star checked"></span>
-                <span class="star checked"></span>
-                <span class="star"></span>
-            </div>
-            <div class="pin border_round">
-            <img src="#" alt="">
-                <h3>Hôtel chez Amina</h3>
-                <p>Nuit à partir de 96€</p>
-                <span class="star checked"></span>
-                <span class="star checked"></span>
-                <span class="star checked"></span>
-                <span class="star checked"></span>
-                <span class="star checked"></span>
+            
+            <!-- FlexBox pin hebergement -->
+            <div class="container_hebergement_pin">
+                <div class="pin_hebergement border_round">
+                    <div class="cadre">
+                        <div class="test">
+                            <img src="./src/img/hebergements/4_small/marcus-loke-WQJvWU_HZFo-unsplash.jpg" alt="">
+                        </div>
+                    </div>
+                    <h4>Auberge la Cannebière</h4>
+                    <p>Nuit à partir de <b>25€</b> </p>
+                    <div class="stars">
+                        <i class="fas fa-star checked"></i>
+                        <i class="fas fa-star checked"></i>
+                        <i class="fas fa-star checked"></i>
+                        <i class="fas fa-star checked"></i>
+                        <i class="fas fa-star unchecked"></i>
+                    </div>
+                </div>
+                <div class="pin_hebergement border_round">
+                    <div class="cadre">
+                        <img src="./src/img/hebergements/4_small/fred-kleber-gTbaxaVLvsg-unsplash.jpg" alt="">
+                    </div>                    
+                    <h4>Hôtel du port</h4>
+                    <p>Nuit à partir de 52€</p>
+                    <div class="stars">
+                        <i class="fas fa-star checked"></i>
+                        <i class="fas fa-star checked"></i>
+                        <i class="fas fa-star checked"></i>
+                        <i class="fas fa-star checked"></i>
+                        <i class="fas fa-star checked"></i>
+                    </div>
+                </div>
+                <div class="pin_hebergement border_round">
+                    <div class="cadre">
+                        <img src="./src/img/hebergements/4_small/reisetopia-B8WIgxA_PFU-unsplash.jpg" alt="">
+                    </div>                    
+                    <h4>Hôtel les mouettes</h4>
+                    <p>Nuit à partir de 76€</p>
+                    <div class="stars">
+                        <i class="fas fa-star checked"></i>
+                        <i class="fas fa-star checked"></i>
+                        <i class="fas fa-star checked"></i>
+                        <i class="fas fa-star checked"></i>
+                        <i class="fas fa-star unchecked"></i>
+                    </div>
+                </div>
+                <div class="pin_hebergement border_round">
+                    <div class="cadre">
+                        <img src="./src/img/hebergements/4_small/annie-spratt-Eg1qcIitAuA-unsplash.jpg" alt="">
+                    </div>                    
+                    <h4>Hôtel de la mer</h4>
+                    <p>Nuit à partir de 46€</p>
+                    <div class="stars">
+                        <i class="fas fa-star checked"></i>
+                        <i class="fas fa-star checked"></i>
+                        <i class="fas fa-star checked"></i>
+                        <i class="fas fa-star unchecked"></i>
+                        <i class="fas fa-star unchecked"></i>
+                    </div>
+                </div>
+                <div class="pin_hebergement border_round">
+                    <div class="cadre">
+                        <img src="./src/img/hebergements/4_small/nicate-lee-kT-ZyaiwBe0-unsplash.jpg" alt="">
+                    </div>                    
+                    <h4>Auberge Le Panier</h4>
+                    <p>Nuit à partir de <b>23€</b></p>
+                    <div class="stars">
+                        <i class="fas fa-star checked"></i>
+                        <i class="fas fa-star checked"></i>
+                        <i class="fas fa-star checked"></i>
+                        <i class="fas fa-star checked"></i>
+                        <i class="fas fa-star unchecked"></i>
+                    </div>
+                </div>
+                <div class="pin_hebergement border_round">
+                    <div class="cadre">
+                        <img src="./src/img/hebergements/4_small/febrian-zakaria-M6S1WvfW68A-unsplash.jpg"  alt="">
+                    </div>                    
+                    <h4>Hôtel chez Amina</h4>
+                    <p>Nuit à partir de 96€</p>
+                    <div class="stars">
+                        <i class="fas fa-star checked"></i>
+                        <i class="fas fa-star checked"></i>
+                        <i class="fas fa-star checked"></i>
+                        <i class="fas fa-star checked"></i>
+                        <i class="fas fa-star checked"></i>
+                    </div>
+                </div>
             </div>
 
-        <a class="flex_line" href=""><b>Afficher plus</b></a>
+            <!-- FlexBox afficher plus -->
+            <div class="container_herbergement_affPlus">
+                <p class="affplus align_flex">Afficher plus</p>
+            </div>
 
         </div>
 
+        <!-- FlexBox populaire -->
         <div class="container_populaire border_round">
 
             <h3>Les plus populaires</h3>
             <span class="icon_populaire"></span>
 
-            <div class="pin_2 border_round">
+            <div class="pin_populaire border_round">
                 <img src="#" alt="">
                 <h3>Hôtel Le soleil du matin</h3>
                 <p>Nuit à partir de 128€</p>
-                <span class="star checked"></span>
-                <span class="star checked"></span>
-                <span class="star checked"></span>
-                <span class="star checked"></span>
-                <span class="star checked"></span>
+                <i class="fas fa-star checked"></i>
+                <i class="fas fa-star checked"></i>
+                <i class="fas fa-star checked"></i>
+                <i class="fas fa-star checked"></i>
+                <i class="fas fa-star checked"></i>
             </div>
 
-            <div class="pin_2 border_round">
+            <div class="pin_populaire border_round">
                 <img src="#" alt="">
                 <h3>Au coeur de l'eau Chambre d'hôtes</h3>
                 <p>Nuit à partir de 71€</p>
-                <span class="star checked"></span>
-                <span class="star checked"></span>
-                <span class="star checked"></span>
-                <span class="star checked"></span>
-                <span class="star"></span>
+                <i class="fas fa-star checked"></i>
+                <i class="fas fa-star checked"></i>
+                <i class="fas fa-star checked"></i>
+                <i class="fas fa-star checked"></i>
+                <i class="fas fa-star unchecked"></i>
             </div>
             
-            <div class="pin_2 border_round">
+            <div class="pin_populaire border_round">
                 <img src="#" alt="">
                 <h3>Hôtel tout bleu et Blanc</h3>
                 <p>Nuit à partir de 68€</p>
-                <span class="star checked"></span>
-                <span class="star checked"></span>
-                <span class="star checked"></span>
-                <span class="star checked"></span>
-                <span class="star"></span>
+                <i class="fas fa-star checked"></i>
+                <i class="fas fa-star checked"></i>
+                <i class="fas fa-star checked"></i>
+                <i class="fas fa-star checked"></i>
+                <i class="fas fa-star unchecked"></i>
             </div>
 
         </div>
