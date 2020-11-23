@@ -2,6 +2,9 @@ body {
     margin: 0 0 0 0;
     font-family: 'Raleway', sans-serif;
     /* background-image: url(./src/img/canvas/Desktop\ -\ 1.png); */
+    opacity: 1;
+    display: flex;
+    flex-direction: column;
 }
 
 
@@ -11,13 +14,8 @@ body {
 
 
 .hebergement {
-    display: flex;
-    
-    
 
-    /* A SUPPRIMER */
-    margin-top: -60px;
-    opacity: 1;
+
 }
 
 /* // __________________________________________________________________________________________________________________________________________________ //
@@ -255,4 +253,82 @@ body {
     justify-content: center;
     height: 36px;
     font-size: 15px;
+}
+
+
+/* // __________________________________________________________________________________________________________________________________________________ //
+//                                                      COLORISATION                                                                       
+// _____________________________________________________________________________________________________________________________________________________ // */
+
+/* ------------------- */
+header {
+    background-color: yellow;
+}
+
+.logo {
+    background-color: yellowgreen;
+}
+
+.navmenu {
+    background-color: violet;
+}
+
+.inscription {
+    background-color: turquoise;
+}
+
+/* ------------------- */
+.recherche {
+    background-color: tomato;
+}
+
+.recherche > h2 {
+    background-color: thistle;
+}
+
+.recherche > p {
+    background-color: teal;
+}
+
+.searchbar {
+    background-color: tan;
+}
+
+.filtre {
+    background-color: steelblue;
+}
+
+.information {
+    background-color: springgreen;
+}
+
+/* ------------------------------ */
+
+.activite {
+    background-color: slateblue;
+}
+
+.activite > h2 {
+    background-color: skyblue;
+}
+
+.container_pin_activite {
+    background-color: sienna;
+}
+
+/* ------------------------------- */
+footer {
+    background-color: seagreen;
+}
+
+.aProp {
+    background-color: salmon;
+}
+
+.nosHeb {
+    background-color: royalblue;
+}
+
+.assis {
+    background-color: purple;
 }

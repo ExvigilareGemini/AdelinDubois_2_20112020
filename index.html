@@ -34,32 +34,38 @@
 
         <p>En plein centre ville ou en pleine nature</p>
 
-        <span class="icon_recherche"></span>
-        <input type="text" placeholder="Saisissez une ville">
-        <button>Rechercher</button>
+        <div class="searchbar">
+            <span class="icon_recherche"></span>
+            <input type="text" placeholder="Saisissez une ville">
+            <button>Rechercher</button>
+        </div>
 
-        <p>Filtres</p>
-            <button class="filtre_selection">
-                <div class="icon">
-                    <i class="fas fa-dog"></i>
+        <div class="filtre">
+            <p>Filtres</p>
+                <button class="filtre_selection">
+                    <div class="icon">
+                        <i class="fas fa-dog"></i>
+                    </div>
+                    <p>Economique</p>
+                </button>
+                <div class="filtre_selection">
+                    <span class="icon_familial"></span>
+                    <p>Familial</p>
                 </div>
-                <p>Economique</p>
-            </button>
-            <div class="filtre_selection">
-                <span class="icon_familial"></span>
-                <p>Familial</p>
-            </div>
-            <div class="filtre_selection">
-                <span class="icon_romantique"></span>
-                <p>Romantique</p>
-            </div>
-            <div class="filtre_selection">
-                <span class="icon_animaux"></span>
-                <p>Animaux autorisés</p>
-            </div>
+                <div class="filtre_selection">
+                    <span class="icon_romantique"></span>
+                    <p>Romantique</p>
+                </div>
+                <div class="filtre_selection">
+                    <span class="icon_animaux"></span>
+                    <p>Animaux autorisés</p>
+                </div>
+        </div>
 
-        <span class="icon_information"></span>
-        <p>Plus de 500 logements sont disponibles dans cette ville</p>
+        <div class="information">
+            <span class="icon_information"></span>
+            <p>Plus de 500 logements sont disponibles dans cette ville</p>
+        </div>
 
     </section>
 
@@ -241,34 +247,31 @@
         
         <h2>Activités à Marseille</h2>
 
-        <div class="pin3 border_round">
-            <img src="#" alt="">
-            <h3>Vieux Port</h3>
-        </div>
-
-        <div class="pin3 border_round">
-            <img src="#" alt="">
-            <h3>Fort de Pomègues</h3>
-        </div>
-
-        <div class="pin3 border_round">
-            <img src="#" alt="">
-            <h3>Îles du Frioul</h3>
-        </div>
-
-        <div class="pin3 border_round">
-            <img src="#" alt="">
-            <h3>Parc National des Calanques</h3>
-        </div>
-
-        <div class="pin3 border_round">
-            <img src="#" alt="">
-            <h3>Notre-Dame-de-la-Garde</h3>
-        </div>
-
-        <div class="pin3 border_round">
-            <img src="#" alt="">
-            <h3>Parc Longchamp</h3>
+        <div class="container_pin_activite">
+            <div class="pin3 border_round">
+                <img src="#" alt="">
+                <h3>Vieux Port</h3>
+            </div>
+            <div class="pin3 border_round">
+                <img src="#" alt="">
+                <h3>Fort de Pomègues</h3>
+            </div>
+            <div class="pin3 border_round">
+                <img src="#" alt="">
+                <h3>Îles du Frioul</h3>
+            </div>
+            <div class="pin3 border_round">
+                <img src="#" alt="">
+                <h3>Parc National des Calanques</h3>
+            </div>
+            <div class="pin3 border_round">
+                <img src="#" alt="">
+                <h3>Notre-Dame-de-la-Garde</h3>
+            </div>
+            <div class="pin3 border_round">
+                <img src="#" alt="">
+                <h3>Parc Longchamp</h3>
+            </div>
         </div>
 
     </section>
@@ -277,18 +280,24 @@
 
     <footer>
 
-        <h3>A propos</h3>
-        <a href="">Fonctionnement du site</a>
-        <a href="">Conditions générales de vente</a>
-        <a href="">Données et confidentialité</a>
+        <div class="aProp">
+            <h3>A propos</h3>
+            <a href="">Fonctionnement du site</a>
+            <a href="">Conditions générales de vente</a>
+            <a href="">Données et confidentialité</a>
+        </div>
 
-        <h3>Nos hébergements</h3>
-        <a href="">Charte qualité</a>
-        <a href="">Soumettre votre hôtel</a>
+        <div class="nosHeb">
+            <h3>Nos hébergements</h3>
+            <a href="">Charte qualité</a>
+            <a href="">Soumettre votre hôtel</a>
+        </div>
 
-        <h3>Assistance</h3>
-        <a href="">Centre d'aide</a>
-        <a href="">Nous contacter</a>
+        <div class="assis">
+            <h3>Assistance</h3>
+            <a href="">Centre d'aide</a>
+            <a href="">Nous contacter</a>
+        </div>
 
 
     </footer>
