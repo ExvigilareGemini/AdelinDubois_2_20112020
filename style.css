@@ -12,28 +12,30 @@ body {
 
 .hebergement {
     display: flex;
-    min-height : 626px;
+    
     
 
     /* A SUPPRIMER */
-    margin-top: 21px;
+    margin-top: -60px;
     opacity: 1;
 }
 
 /* // __________________________________________________________________________________________________________________________________________________ //
 //                                                      CONTAINERS                                                                       
-// __________________________________________________________________________________________________________________________________________________ // */
+// _____________________________________________________________________________________________________________________________________________________ // */
 
-/*********HEBERGEMENT************/
+/*******************************************************HEBERGEMENT****************************************************************************/
 
 .container_hebergement {
-    margin-left: 3.5%;
-    max-width: 880px;
+    margin-left: 50px;
+    width: 880px;
+    height : 626px;
     background-color: #F2F2F2;
+
 }
 
 .container_hebergement_titre {
-    height: 14.6%;
+    height: 90px;
 }
 
 .container_hebergement_pin {
@@ -42,90 +44,171 @@ body {
     justify-content: space-around;
     align-items: start;
     margin: 0 24.5px 0 24.5px;
-    height: 73%;
+    height: 457px;
 }
 
 .container_herbergement_affPlus {
-    height: 12.4%;
+    height: 107px;
 }
 
 
-
-
+/*******************************************************POPULAIRE****************************************************************************/
 
 .container_populaire {
-    background-color: teal;
-    margin-left: 2.7%;
-    width: 29.16%;
+    background-color: #F2F2F2;
+    margin-left: 39px;
+    width: 420px;
+    height : 626px;
 }
 
+.container_populaire_titre {
+    height: 93px;
+    display: flex;
+}
 
+.container_populaire_pin {
+    height: 530px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: start;
+}
+
+/* // ____________________________________________________________________________________________________________________________________________ //
+//                                                      AJUSTEMENTS DE MISE EN PAGE                                                                */
+
+/* Titre h3 situé dans les deux containers */
+.title-alignFlex-noMargTop {  
+    font-size: 22.4px;
+    font-weight: bold;
+    margin-top: 0;
+    padding: 42px 0 0 40px;
+}
+
+.fa-chart-line {
+    font-size: 22.4px;
+    margin-top: 0;
+    padding: 42px 0 0 115px;
+}
+
+.affplus {
+    font-weight: bolder ;
+    font-size: 19px;
+    margin-top: 0;
+    padding: 11px 0 0 42px;
+}
 
 /* // __________________________________________________________________________________________________________________________________________________ //
 //                                                      PINS                                                                       
-// __________________________________________________________________________________________________________________________________________________ // */
+// _____________________________________________________________________________________________________________________________________________________ // */
 
+/*******************************************************HEBERGEMENT***************************************************************************/
 
 .pin_hebergement {
     background-color: white;
     width : 246px;
-    /* height: 31.9%; */
-    height: 199.5px;
+    height: 199px;
     box-shadow: 5px 5px 18px  rgba(0, 0, 0, 0.1);
 }
 
+/*******************************************************POPULAIRE****************************************************************************/
+
 .pin_populaire {
-    background-color: tomato;
+    background-color: white;
+    width: 343px;
+    height: 144px;
+    display: flex;
+    box-shadow: 5px 5px 18px  rgba(0, 0, 0, 0.1);    
 }
+
+/* // _____________________________________________________________________________________________________________________________________________//
+//                                                      ELEMENTS DES PINS                                                                          */
+
+/*******************************************************HEBERGEMENT***************************************************************************/
 
 .cadre{
     overflow: hidden;
-    background-color: teal;
-    margin: 2% 2% 0 2%;
+    margin: 5px 5px 0 5px;
     border-radius: 15px 15px 0 0;
-    height: 119px;
+    height: 114px;
     position: relative;
     width: 235px;
 }
 
-.cadre img {
+.cadre > img {
   position: absolute;
   top: 0px;
   bottom: 0px;
   left: 0px;
   right: 0px;
   margin: auto;
-  width: 250px;
+  width: 235px;
 }
 
-@media screen and (max-width : 700px) {
-    body {background-color: white;}
-}
-
-.pin_hebergement h4 {
-    padding-left: 15px;
+.pin_hebergement > h4 {
+    padding-left: 16px;
     font-size: 16.4px;
-    margin: 10px 0 0 0;
+    margin: 8px 0 0 0;
 }
 
-.pin_hebergement p {
-    padding-left: 15px;
+.pin_hebergement > p {
+    padding-left: 16px;
     font-size: 14px;
     margin: 5px 0 0 0;
 }
 
 .stars {
-    padding-left: 15px;
+    padding-left: 16px;
     margin-top: 6px;
     font-size: 12px;
 }
+/*******************************************************POPULAIRE***************************************************************************/
 
-.fas {
+.cadre_populaire {
+    overflow: hidden;
+    margin: 5px 0 5px 5px;
+    border-radius: 15px 0 0 15px;
+    height: 134px;
+    position: relative;
+    width: 127px;
+    flex-shrink: 0;
+}
+
+.cadre_populaire > img {
+    object-fit: cover;
+    width: 127px;
+    height: 134px;
+    
+  }
+
+.content > h4 {
+    padding-left: 18px;
+    font-size: 18px;
+    margin: 15px 0 0 0;
+}
+
+.content > p {
+    padding-left: 18px;
+    font-size: 14px;
+    margin: 5px 0 0 0;
+}
+
+.content > .stars{
+    margin: 40px 0 0 3px;
+}
+
+
+
+/*******************************************************GLOBAL******************************************************************************/
+
+
+
+.fa-star {
     letter-spacing: -3px;
 }
 /* // __________________________________________________________________________________________________________________________________________________ //
 //                                                      EFFETS VISUELLES                                                                       
-// __________________________________________________________________________________________________________________________________________________ // */
+// _____________________________________________________________________________________________________________________________________________________ // */
 
 
 .border_round {
@@ -140,21 +223,11 @@ body {
 
 /* // __________________________________________________________________________________________________________________________________________________ //
 //                                                      EFFETS DE TEXTE                                                                       
-// __________________________________________________________________________________________________________________________________________________ // */
+// _____________________________________________________________________________________________________________________________________________________ // */
 
-.titre_hebergement {  
-    font-size: 22.4px;
-    font-weight: bold;
-    margin-top: 0;
-    padding: 42px 0 0 40px;
-}
 
-.affplus {
-    font-weight: bolder ;
-    font-size: 19px;
-    margin-top: 0;
-    padding: 11px 0 0 42px;
-}
+
+
 
 .filtre_selection {
     display: flex;
