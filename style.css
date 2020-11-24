@@ -1,10 +1,8 @@
 body {
-    margin: 0 0 0 0;
+    margin: 0 0 0 52px;
     font-family: 'Raleway', sans-serif;
     /* background-image: url(./src/img/canvas/Desktop\ -\ 1.png); */
-    opacity: 1;
-    display: flex;
-    flex-direction: column;
+    
 }
 
 
@@ -14,18 +12,23 @@ body {
 
 
 .hebergement {
+    display:flex ;
+}
 
-
+header {
+    display: flex;
+    margin-top: 43px;
+    justify-content: flex-end;
 }
 
 /* // __________________________________________________________________________________________________________________________________________________ //
 //                                                      CONTAINERS                                                                       
 // _____________________________________________________________________________________________________________________________________________________ // */
 
-/*******************************************************HEBERGEMENT****************************************************************************/
+/********************************HEBERGEMENT********************************/
 
 .container_hebergement {
-    margin-left: 50px;
+    
     width: 880px;
     height : 626px;
     background-color: #F2F2F2;
@@ -50,8 +53,8 @@ body {
 }
 
 
-/*******************************************************POPULAIRE****************************************************************************/
 
+/********************************POPULAIRE*********************************/
 .container_populaire {
     background-color: #F2F2F2;
     margin-left: 39px;
@@ -72,35 +75,13 @@ body {
     align-items: start;
 }
 
-/* // ____________________________________________________________________________________________________________________________________________ //
-//                                                      AJUSTEMENTS DE MISE EN PAGE                                                                */
 
-/* Titre h3 situé dans les deux containers */
-.title-alignFlex-noMargTop {  
-    font-size: 22.4px;
-    font-weight: bold;
-    margin-top: 0;
-    padding: 42px 0 0 40px;
-}
-
-.fa-chart-line {
-    font-size: 22.4px;
-    margin-top: 0;
-    padding: 42px 0 0 115px;
-}
-
-.affplus {
-    font-weight: bolder ;
-    font-size: 19px;
-    margin-top: 0;
-    padding: 11px 0 0 42px;
-}
 
 /* // __________________________________________________________________________________________________________________________________________________ //
 //                                                      PINS                                                                       
 // _____________________________________________________________________________________________________________________________________________________ // */
 
-/*******************************************************HEBERGEMENT***************************************************************************/
+/********************************HEBERGEMENT********************************/
 
 .pin_hebergement {
     background-color: white;
@@ -109,7 +90,7 @@ body {
     box-shadow: 5px 5px 18px  rgba(0, 0, 0, 0.1);
 }
 
-/*******************************************************POPULAIRE****************************************************************************/
+/********************************POPULAIRE*********************************/
 
 .pin_populaire {
     background-color: white;
@@ -122,7 +103,7 @@ body {
 /* // _____________________________________________________________________________________________________________________________________________//
 //                                                      ELEMENTS DES PINS                                                                          */
 
-/*******************************************************HEBERGEMENT***************************************************************************/
+/********************************HEBERGEMENT********************************/
 
 .cadre{
     overflow: hidden;
@@ -160,7 +141,7 @@ body {
     margin-top: 6px;
     font-size: 12px;
 }
-/*******************************************************POPULAIRE***************************************************************************/
+/********************************POPULAIRE*********************************/
 
 .cadre_populaire {
     overflow: hidden;
@@ -197,7 +178,7 @@ body {
 
 
 
-/*******************************************************GLOBAL******************************************************************************/
+/*********************************GLOBAL**********************************/
 
 
 
@@ -220,6 +201,187 @@ body {
 }
 
 /* // __________________________________________________________________________________________________________________________________________________ //
+//                                                      MISE EN PAGE                                                                       
+// _____________________________________________________________________________________________________________________________________________________ // */
+/* _____________________________________________________________________ */
+/*********************************HEADER**********************************/
+/* _____________________________________________________________________ */
+
+.container_logo {
+    flex-grow: 1;
+    text-indent: 0;
+}
+
+.ancre_hebergement {
+    flex-basis: 162px;
+    text-decoration: none;
+    text-align: center;
+    color: #0065FC;
+    font-weight: bold;
+    border-top: 4px solid #0065FC;
+    padding-top: 40px;
+    margin-top: -45px;
+}
+
+.ancre_activite {
+    flex-basis: 154px;
+    text-decoration: none;
+    text-align: center;
+}
+
+.inscription {
+    flex-basis: 169px;
+    text-decoration: none;
+    text-align: center;
+    color: #0065FC;
+    font-weight: bold;
+}
+
+/* _____________________________________________________________________ */
+/********************************RECHERCHE********************************/
+/* _____________________________________________________________________ */
+
+/* --- HEADER RECHERCHE --- */
+/* Mise en page du titre et texte qui suit directement */
+.recherche > h3 {
+    font-size: 22.5px;
+    margin: 35px 0 0 0;
+}
+.recherche > p {
+    font-size: 15.5px;
+    margin: 5px 0 0 0;
+}
+
+/* --- SEARCHBAR --- */
+/* Mise en forme de la searchbar incluant icone, input text et le bouton */
+.searchbar {
+    margin: 21px 0 20px 0;
+}
+.searchbar > i {
+    float: left;
+    text-align: center;
+    line-height: 50px;
+    font-size: 17px;
+    height: 50px;
+    width: 52px;
+    background-color: #F2F2F2;
+    border-radius: 15px 0 0 15px;
+}
+.searchbar > input[type=text]  {
+    float: left;
+    height: 46px;
+    width: 234px;
+    border: 1px solid #F2F2F2;
+    font-size: 18px;
+    font-weight: bold;
+    text-indent: 10px;
+}
+.searchbar > button {
+    height: 50px;
+    width: 134px;
+    border: none;
+    background-color: #0065FC;
+    color: white;
+    border-radius: 0 15px 15px 0;
+    font-size: 17.5px;
+}
+
+/* --- FILTRES --- */
+/* Mise en page de la catégorie filtre, incluant : <p>Filtre et les 4 sélecteurs de filtres (icone + <p>) */
+.filtre {
+    display: flex;
+    margin-top: 32px;
+}
+/* Mise en page de texte : "Filtres" */
+.filtre > p {
+    margin: 15px 36px 0 10px;
+    font-size: 18.5px;
+    font-weight: bold;
+}
+/* Mise en page des 4 sélecteurs de filtres */
+.filtre_selection {
+    display: flex;
+    flex-direction: row;
+    border-radius: 50px;
+    border: 2px solid #f2f2f2;
+    height: 46px;
+    padding-right: 20px;
+    margin-right: 28px;
+    align-items: center;
+}
+/* Mise en page du fond coloré de l'icone */
+.filtre_selection > .icon {
+    background-color: #DEEBFF;
+    border-radius: 100%;
+    width : 50px;
+    height: 50px;
+    margin-left: -6px;
+}
+/* Mise en page de l'icone */
+.filtre_selection > .icon > i {
+    display: flex;
+    justify-content: center;
+    font-size: 20px;
+    color : #0065FC;
+    line-height: 50px;
+}
+.filtre_selection > p {
+    padding-left: 12px;
+    font-size: 18.5px;
+    font-weight: bold;
+}
+
+/* --- FOOTER RECHERCHE --- */
+
+.information {
+    display : flex ;
+    margin-top: 20px;
+}
+
+.information > .icon {
+    background-color: white;
+    border-radius: 100%;
+    height: 22px;
+    width: 22px;
+    border: 1px solid #f2f2f2;
+    margin: 15px 11px 0 7px ;
+}
+
+.information > .icon > i {
+    display: flex;
+    justify-content: center;
+    line-height: 20px;
+    font-size: 12px;
+    color: #0065FC;
+}
+/* _____________________________________________________________________ */
+/********************************HEBERGEMENT******************************/
+/* _____________________________________________________________________ */
+
+/* Titre h3 situé dans les deux containers 'Hébergement' et 'Les plus populaires' : police et alignement */
+.title-alignFlex-noMargTop {  
+    font-size: 22.4px;
+    font-weight: bold;
+    margin-top: 0;
+    padding: 42px 0 0 40px;
+}
+
+/* Icone box 'Les plus populaires' situé dans les deux containers : taille et alignement */
+.fa-chart-line {
+    font-size: 22.4px;
+    margin-top: 0;
+    padding: 42px 0 0 115px;
+}
+
+/* Texte "Afficher plus" dans la box 'hébergement' : police et alignement */
+.affplus {
+    font-weight: bolder ;
+    font-size: 19px;
+    margin-top: 0;
+    padding: 11px 0 0 42px;
+}
+
+/* // __________________________________________________________________________________________________________________________________________________ //
 //                                                      EFFETS DE TEXTE                                                                       
 // _____________________________________________________________________________________________________________________________________________________ // */
 
@@ -227,33 +389,7 @@ body {
 
 
 
-.filtre_selection {
-    display: flex;
-    flex-direction: row;
-    border-radius: 50px;
-    border: 2px solid white;
-    width: 250px;
-    height: 40px;
-    padding: 0 0 0 0;
-    align-items: center;
-}
 
-.filtre_selection > .icon {
-    background-color: cyan;
-    border-radius: 100%;
-    width : 35px;
-    height: 36px;
-    
-    
-}
-
-.filtre_selection > .icon > i {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 36px;
-    font-size: 15px;
-}
 
 
 /* // __________________________________________________________________________________________________________________________________________________ //
@@ -261,28 +397,34 @@ body {
 // _____________________________________________________________________________________________________________________________________________________ // */
 
 /* ------------------- */
-header {
+/* header {
     background-color: yellow;
+    opacity: 1;
 }
 
 .logo {
     background-color: yellowgreen;
 }
 
-.navmenu {
+.ancre_hebergement {
     background-color: violet;
+}
+
+.ancre_activite {
+    background-color: lightsalmon;
 }
 
 .inscription {
     background-color: turquoise;
-}
+} */
 
 /* ------------------- */
-.recherche {
+/* .recherche {
     background-color: tomato;
-}
+    opacity: 0.3;
+} */
 
-.recherche > h2 {
+/* .recherche > h3 {
     background-color: thistle;
 }
 
@@ -292,15 +434,15 @@ header {
 
 .searchbar {
     background-color: tan;
-}
+} */
 
-.filtre {
+/* .filtre {
     background-color: steelblue;
-}
+} */
 
-.information {
+/* .information {
     background-color: springgreen;
-}
+} */
 
 /* ------------------------------ */
 
