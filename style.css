@@ -163,8 +163,8 @@ footer {
 }
 
 .filtre_selection:hover {
-    background-color: #0065fc;
-    color: white;
+  background-color: #0065fc;
+  color: white;
 }
 
 /* --- FOOTER RECHERCHE --- */
@@ -198,8 +198,6 @@ footer {
 .title-alignFlex-noMargTop {
   font-size: 22.4px;
   font-weight: bold;
-  margin-top: 0;
-  padding: 42px 0 0 40px;
 }
 
 /* Icone box 'Les plus populaires' situé dans les deux containers : taille et alignement */
@@ -213,8 +211,6 @@ footer {
 .affplus {
   font-weight: bolder;
   font-size: 19px;
-  margin-top: 0;
-  padding: 11px 0 0 42px;
 }
 
 /* _____________________________________________________________________ */
@@ -244,47 +240,43 @@ footer {
 /********************************HEBERGEMENT********************************/
 
 .container_hebergement {
-  width: 880px;
-  height: 626px;
+  width: 60%;
   background-color: #f2f2f2;
+  padding: 0 30px 0 30px;
 }
 
 .container_hebergement_titre {
-  height: 90px;
+
 }
 
 .container_hebergement_pin {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-around;
-  align-items: start;
-  margin: 0 24.5px 0 24.5px;
-  height: 457px;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .container_herbergement_affPlus {
-  height: 107px;
+  height: 60px;
 }
 
 /********************************POPULAIRE*********************************/
 .container_populaire {
   background-color: #f2f2f2;
-  margin-left: 39px;
-  width: 420px;
-  height: 626px;
+  margin-left: 40px;
+  width: 25%;
+  padding: 0 30px 30px 30px;
 }
 
 .container_populaire_titre {
-  height: 93px;
   display: flex;
 }
 
 .container_populaire_pin {
-  height: 530px;
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-around;
-  align-items: start;
+  flex-direction: column;
+  width: 100%;
 }
 
 /********************************ACTIVITE*********************************/
@@ -320,20 +312,22 @@ footer {
 
 .pin_hebergement {
   background-color: white;
-  width: 246px;
-  height: 199px;
+  width: 250px;
+  height: 200px;
   box-shadow: 5px 5px 18px rgba(0, 0, 0, 0.1);
+  margin: 15px 10px 15px 0;
   cursor: pointer;
 }
 
 /********************************POPULAIRE*********************************/
 
 .pin_populaire {
-  background-color: white;
-  width: 343px;
-  height: 144px;
   display: flex;
+  background-color: white;
+  width: 340px;
+  height: 150px;
   box-shadow: 5px 5px 18px rgba(0, 0, 0, 0.1);
+  margin: 15px 0 15px 0;
   cursor: pointer;
 }
 
@@ -378,18 +372,13 @@ footer {
   margin: 5px 5px 0 5px;
   border-radius: 15px 15px 0 0;
   height: 114px;
-  position: relative;
-  width: 235px;
+  width: 96%;
 }
 
 .cadre > img {
-  position: absolute;
-  top: 0px;
-  bottom: 0px;
-  left: 0px;
-  right: 0px;
-  margin: auto;
-  width: 235px;
+  object-fit: cover;
+  width: 100%;
+  height: inherit;
 }
 
 .pin_hebergement > h4 {
@@ -415,16 +404,15 @@ footer {
   overflow: hidden;
   margin: 5px 0 5px 5px;
   border-radius: 15px 0 0 15px;
-  height: 134px;
-  position: relative;
-  width: 127px;
+  height: 140px;
+  width: 130px;
   flex-shrink: 0;
 }
 
 .cadre_populaire > img {
   object-fit: cover;
-  width: 127px;
-  height: 134px;
+  width: inherit;
+  height: inherit;
 }
 
 .content > h4 {
