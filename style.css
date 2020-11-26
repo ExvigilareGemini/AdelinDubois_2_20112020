@@ -203,8 +203,6 @@ footer {
 /* Icone box 'Les plus populaires' situé dans les deux containers : taille et alignement */
 .fa-chart-line {
   font-size: 22.4px;
-  margin-top: 0;
-  padding: 42px 0 0 115px;
 }
 
 /* Texte "Afficher plus" dans la box 'hébergement' : police et alignement */
@@ -265,17 +263,20 @@ footer {
   background-color: #f2f2f2;
   margin-left: 40px;
   width: 25%;
-  padding: 0 30px 30px 30px;
+  padding: 0 30px 20px 30px;
 }
 
 .container_populaire_titre {
   display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top : 20px;
 }
 
 .container_populaire_pin {
   display: flex;
   flex-wrap: wrap;
-  flex-direction: column;
+  justify-content: center;
   width: 100%;
 }
 
