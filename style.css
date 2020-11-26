@@ -19,9 +19,7 @@ header {
 }
 
 .activite {
-  opacity: 1;
-  margin-top: 85px;
-  height: 554px;
+  margin: 85px 0 60px 0;
 }
 
 footer {
@@ -287,19 +285,31 @@ footer {
 /* _____________________________________________________________________ */
 /********************************ACTIVITE******************************/
 /* _____________________________________________________________________ */
-/* Les boxs de la partie activités sont divisées en 4 boxs faisant office de colonnes (voir ci dessous). */
-/* Contient les 4 colonnes ci-dessous */
+
+/* Contient 2 containers (large-containerèactivite), chacun contenant 2 colonnes (container-activite-pin)*/
 .big_container_activite_pin {
   display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  justify-content: center;
+}
+
+/* Lorsque l'écran passe en dessous de 1315px, permet de wrap 2 colonnes et non 1 seule rendant le processus plus uniforme */
+.large_container_activite {
+  display: flex;
+  margin-top: 10px;
+  justify-content: space-around;
+  width: 50%;
+  min-width: 624px;
 }
 
 /* Modèle de colonnes contenant les pins  */
 .container_activite_pin {
   display: flex;
   flex-wrap: wrap;
-  width: 345px;
   flex-direction: column;
   justify-content: space-between;
+  min-width: 312px; /* Largeur d'une pin_activite + 10px de margin*/
 }
 
 /* ______________________________________________________________________ */
