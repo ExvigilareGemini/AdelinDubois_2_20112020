@@ -245,6 +245,7 @@ footer {
 }
 
 .container_hebergement_titre {
+  padding-top: 20px;
 }
 
 .container_hebergement_pin {
@@ -433,20 +434,23 @@ footer {
   height: inherit;
 }
 
-.content > h4 {
+.textpart > h4 {
   padding-left: 18px;
   font-size: 18px;
-  margin: 15px 0 0 0;
+  margin: 0 0 0 0;
 }
 
-.content > p {
+.textpart > p {
   padding-left: 18px;
   font-size: 14px;
   margin: 5px 0 0 0;
 }
 
-.content > .stars {
-  margin: 40px 0 0 3px;
+.content {
+  display: flex; 
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 15px 0 15px 0;
 }
 
 /********************************ACTIVITE*********************************/
@@ -498,86 +502,36 @@ footer {
 }
 
 /* // __________________________________________________________________________________________________________________________________________________ //
-//                                                      COLORISATION                                                                       
+//                                                      MEDIA QUERIES                                                                       
 // _____________________________________________________________________________________________________________________________________________________ // */
 
-/* ------------------------------ */
-/* header {
-    background-color: yellow;
-    opacity: 1;
+@media (max-width: 1090px){
+
+  .filtre {
+    flex-wrap: wrap;
+  }
+  .hebergement {
+  justify-content: space-evenly;
+  }
+
+  .container_hebergement {
+    width: 35%;
+  }
+
+  .container_populaire {
+    min-width: unset;
+    margin: unset;
+    width: 35%;
+  }
+
+  .content > h4 {
+    padding-left: 17px;
+    font-size: 16px;
+  }
+
+  .content > p {
+    font-size: 12px;
+    padding-left: 16px;
+  }
+  
 }
-
-.logo {
-    background-color: yellowgreen;
-}
-
-.ancre_hebergement {
-    background-color: violet;
-}
-
-.ancre_activite {
-    background-color: lightsalmon;
-}
-
-.inscription {
-    background-color: turquoise;
-} */
-
-/* ------------------------------ */
-/* .recherche {
-    background-color: tomato;
-    opacity: 0.3;
-}
-
-.recherche > h3 {
-    background-color: thistle;
-}
-
-.recherche > p {
-    background-color: teal;
-}
-
-.searchbar {
-    background-color: tan;
-}
-
-.filtre {
-    background-color: steelblue;
-}
-
-.information {
-    background-color: springgreen;
-} */
-
-/* ------------------------------ */
-
-/* .activite {
-    background-color: slateblue;
-    opacity: 1;
-}
-
-.activite > h2 {
-    background-color: skyblue;
-}
-
-.container_activite_pin {
-    background-color: mediumorchid;
-} */
-
-/* ------------------------------- */
-/* footer {
-    background-color: seagreen;
-    opacity: 0.3;
-}
-
-.aProp {
-    background-color: salmon;
-}
-
-.nosHeb {
-    background-color: royalblue;
-}
-
-.assis {
-    background-color: purple;
-} */
