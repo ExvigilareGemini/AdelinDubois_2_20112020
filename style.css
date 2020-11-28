@@ -674,13 +674,14 @@ footer {
   .recherche {
     margin-left: 20px;
   }
-
+.searchbar > input[type="text"] {
+  width: 70%;
+}
   .searchbar > button {
     width: 50px;
     border-radius: 15px 15px 15px 15px;
     position: absolute;
-    left: 280px;
-    content: "\f002";
+    left: 85%;
   }
 
   .search_button {
