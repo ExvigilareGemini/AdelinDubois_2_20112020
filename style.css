@@ -233,6 +233,7 @@ footer {
 
 .container_footer > a {
   text-decoration: none;
+  color: black;
   line-height: 1.7;
 }
 
