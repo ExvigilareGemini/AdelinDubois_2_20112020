@@ -14,6 +14,11 @@ header {
   justify-content: flex-end;
 }
 
+.recherche {
+  display: flex;
+  flex-direction: column;
+}
+
 .hebergement {
   display: flex;
 }
@@ -24,6 +29,7 @@ header {
 
 footer {
   margin-left: -52px;
+  padding-bottom: 50px;
   display: flex;
   justify-content: center;
   background-color: #f2f2f2;
@@ -36,13 +42,7 @@ footer {
 /*********************************HEADER**********************************/
 /* _____________________________________________________________________ */
 
-.container_logo {
-  flex-grow: 1;
-  text-indent: 0;
-}
-
 .ancre_hebergement {
-  flex-basis: 162px;
   text-decoration: none;
   text-align: center;
   color: #0065fc;
@@ -53,7 +53,6 @@ footer {
 }
 
 .ancre_activite {
-  flex-basis: 154px;
   text-decoration: none;
   text-align: center;
 }
@@ -85,6 +84,7 @@ footer {
 /* Mise en forme de la searchbar incluant icone, input text et le bouton */
 .searchbar {
   margin: 21px 0 20px 0;
+  height: 50px;
 }
 .searchbar > i {
   float: left;
@@ -115,10 +115,15 @@ footer {
   font-size: 17.5px;
 }
 
+.search_button_icon {
+  visibility: hidden;
+}
+
 /* --- FILTRES --- */
 /* Mise en page de la catégorie filtre, incluant : <p>Filtre et les 4 sélecteurs de filtres (icone + <p>) */
 .filtre {
   display: flex;
+  flex-wrap: wrap;
   margin-top: 32px;
 }
 /* Mise en page de texte : "Filtres" */
@@ -180,6 +185,7 @@ footer {
   width: 22px;
   border: 1px solid #f2f2f2;
   margin: 15px 11px 0 7px;
+  flex-shrink: 0;
 }
 
 .information > .icon > i {
@@ -235,11 +241,25 @@ footer {
 // _____________________________________________________________________________________________________________________________________________________ // */
 
 /* _____________________________________________________________________ */
+/*********************************HEADER**********************************/
+/* _____________________________________________________________________ */
+.container_logo {
+  flex-grow: 1;
+  text-indent: 0;
+}
+
+.container_ancre {
+  display: flex;
+  flex-basis: 300px;
+  justify-content: space-around;
+}
+
+/* _____________________________________________________________________ */
 /********************************RECHERCHE********************************/
 /* _____________________________________________________________________ */
 
 .container_filtre_selection {
-  display : flex;
+  display: flex;
   flex-wrap: wrap;
 }
 
@@ -372,23 +392,18 @@ footer {
 }
 .xl {
   height: 445px;
-  background-color: #0065fc;
 }
 .large {
   height: 236px;
-  background-color: #deebff;
 }
 .medium {
   height: 209px;
-  background-color: lightblue;
 }
 .small {
   height: 195px;
-  background-color: gray;
 }
 .tiny {
   height: 164px;
-  background-color: lawngreen;
 }
 /* // _____________________________________________________________________________________________________________________________________________//
 //                                                      ELEMENTS DES PINS                                                                          */
@@ -397,7 +412,7 @@ footer {
 
 .cadre {
   overflow: hidden;
-  margin: 5px 5px 0 5px;
+  margin: 2% 2% 0 2%;
   border-radius: 15px 15px 0 0;
   height: 114px;
   width: 96%;
@@ -519,22 +534,14 @@ footer {
 /*******************************************TABLETTE************************************/
 /* ___________________________________________________________________________________ */
 
-@media (max-width: 1090px) {
-
-body {
-  margin: 0 0 0 20px;
-}
-
-/* ______________________________________________________________________ */
-/********************************RECHERCHE*********************************/
-/* ______________________________________________________________________ */
-  .filtre {
-    flex-wrap: wrap;
+@media (min-width: 550px) and (max-width: 1090px) {
+  body {
+    margin: 0 0 0 20px;
   }
 
-/* _____________________________________________________________________ */
-/********************************HEBERGEMENT******************************/
-/* _____________________________________________________________________ */
+  /* _____________________________________________________________________ */
+  /********************************HEBERGEMENT******************************/
+  /* _____________________________________________________________________ */
   .hebergement {
     justify-content: space-evenly;
   }
@@ -544,7 +551,7 @@ body {
   .pin_hebergement {
     width: 100%;
   }
-  .pin_hebergement >h4 {
+  .pin_hebergement > h4 {
     font-size: 14px;
     padding-left: 10px;
   }
@@ -552,9 +559,9 @@ body {
     font-size: 12px;
     padding-left: 10px;
   }
-/* ______________________________________________________________________ */
-/********************************POPULAIRE*********************************/
-/* ______________________________________________________________________ */
+  /* ______________________________________________________________________ */
+  /********************************POPULAIRE*********************************/
+  /* ______________________________________________________________________ */
   .container_populaire {
     min-width: unset;
     margin: unset;
@@ -579,35 +586,180 @@ body {
     padding-left: 10px;
   }
 
-/* _____________________________________________________________________ */
-/********************************ACTIVITE*********************************/
-/* _____________________________________________________________________ */
-.big_container_activite {
-  flex-direction: column;
-  align-content: center;
-}
-.large_container_activite {
-  min-width: 520px;
+  /* _____________________________________________________________________ */
+  /********************************ACTIVITE*********************************/
+  /* _____________________________________________________________________ */
+  .big_container_activite {
+    flex-direction: column;
+    align-content: center;
+  }
+  .large_container_activite {
+    min-width: 520px;
+  }
+
+  .container_activite_pin {
+    min-width: 260px;
+  }
+  .pin_activite {
+    width: 250px;
+  }
+
+  /* ______________________________________________________________________ */
+  /********************************FOOTER************************************/
+  /* ______________________________________________________________________ */
+  footer {
+    margin-left: -20px;
+  }
+  .container_footer > h2 {
+    font-size: 16px;
+  }
+  .container_footer > a {
+    font-size: 12px;
+  }
 }
 
-.container_activite_pin {
-  min-width: 260px;
-}
-.pin_activite {
-  width: 250px;
-}
+@media (max-width: 550px) {
+  body {
+    margin: 0 0 0 0;
+  }
 
-/* ______________________________________________________________________ */
-/********************************FOOTER************************************/
-/* ______________________________________________________________________ */
-footer {
-  margin-left: -20px;
-}
-.container_footer > h2 {
-  font-size: 16px;
-}
-.container_footer > a {
-  font-size: 12px;
-}
+  /* _____________________________________________________________________ */
+  /*********************************HEADER**********************************/
+  /* _____________________________________________________________________ */
 
+  header {
+    margin-top: 20px;
+    flex-wrap: wrap;
+  }
+  .container_logo {
+    margin-left: 20px;
+  }
+  .inscription {
+    margin-top: 15px;
+  }
+  .container_ancre {
+    margin-left: -40px;
+    width: 100%;
+    order: 1;
+    justify-content: space-evenly;
+    flex-basis: unset;
+  }
+  .ancre_hebergement {
+    width: 50%;
+    border-top: unset;
+    border-bottom: 4px solid #0065fc;
+    padding: 0 0 10px 0;
+    margin: 10px 0 -15px 0;
+  }
+  .ancre_activite {
+    width: 50%;
+    border-bottom: 4px solid #f2f2f2;
+    padding: 0 0 10px 0;
+    margin: 10px 0 -15px 0;
+  }
+
+  /* _____________________________________________________________________ */
+  /********************************RECHERCHE********************************/
+  /* _____________________________________________________________________ */
+
+  .recherche {
+    margin-left: 20px;
+  }
+
+  .searchbar > button {
+    width: 50px;
+    border-radius: 15px 15px 15px 15px;
+    position: absolute;
+    left: 280px;
+    content: "\f002";
+  }
+
+  .search_button {
+    visibility: hidden;
+  }
+
+  .search_button_icon {
+    visibility: visible;
+  }
+
+  /* _____________________________________________________________________ */
+  /********************************HEBERGEMENT******************************/
+  /* _____________________________________________________________________ */
+  .hebergement {
+    flex-direction: column-reverse;
+  }
+  .container_hebergement {
+    width: 100%;
+    margin: 0 0 0 -20px;
+    border-radius: unset;
+    background-color: rgb(255, 255, 255);
+  }
+  .container_hebergement_titre {
+    padding-left: 10px;
+  }
+
+  .container_hebergement_pin {
+    padding: 0 20px 0 10px;
+  }
+  .pin_hebergement {
+    width: 100%;
+  }
+  .container_herbergement_affPlus {
+    padding-left: 10px;
+  }
+  /* ______________________________________________________________________ */
+  /********************************POPULAIRE*********************************/
+  /* ______________________________________________________________________ */
+  .container_populaire {
+    width: 100%;
+    margin: 0;
+    border-radius: unset;
+    background-color: rgb(231, 229, 229);
+    padding: 0;
+  }
+  .container_populaire_titre {
+    padding: 20px 20px 0 20px;
+  }
+  .pin_populaire {
+    width: 90%;
+  }
+  .cadre_populaire {
+    width: 40%;
+  }
+  .cadre_populaire > img {
+    width: 100%;
+  }
+
+  /* _____________________________________________________________________ */
+  /********************************ACTIVITE*********************************/
+  /* _____________________________________________________________________ */
+  .activite > h2 {
+    padding-left: 20px;
+  }
+  .pin_activite {
+    height: 200px;
+    margin-bottom: 20px;
+  }
+  .large_container_activite {
+    width: unset;
+    min-width: unset;
+    flex-wrap: wrap;
+  }
+  .container_activite_pin {
+    width: 100%;
+    align-items: center;
+  }
+
+  /* ______________________________________________________________________ */
+  /********************************FOOTER************************************/
+  /* ______________________________________________________________________ */
+  footer {
+    flex-direction: column;
+    padding-left: 30px;
+    margin: unset;
+  }
+
+  .container_footer {
+    width: 100%;
+  }
 }
