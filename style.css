@@ -574,6 +574,7 @@ footer {
     margin: unset;
     width: 35%;
     height: fit-content;
+    height: -moz-max-content;
   }
   .textpart > h4 {
     padding-left: 10px;
@@ -626,10 +627,9 @@ footer {
 }
 
 @media (max-width: 550px) {
-
   body {
     margin: 0 0 0 0;
-    overflow-x: hidden; 
+    overflow-x: hidden;
   }
 
   /* _____________________________________________________________________ */
@@ -674,9 +674,9 @@ footer {
   .recherche {
     margin-left: 20px;
   }
-.searchbar > input[type="text"] {
-  width: 80%;
-}
+  .searchbar > input[type="text"] {
+    width: 80%;
+  }
   .searchbar > button {
     width: 50px;
     border-radius: 15px 15px 15px 15px;
