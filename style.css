@@ -674,8 +674,15 @@ footer {
   .recherche {
     margin-left: 20px;
   }
+  .searchbar {
+    display: flex;
+    width: 90%;
+  }
+  .searchbar > i {
+    flex-shrink: 0;
+  }
   .searchbar > input[type="text"] {
-    width: 80%;
+    flex-grow: 1;
   }
   .searchbar > button {
     width: 50px;
@@ -708,11 +715,8 @@ footer {
     padding-left: 20px;
   }
 
-  .container_hebergement_pin {
-    padding: 0 20px 0 10px;
-  }
   .pin_hebergement {
-    width: 100%;
+    width: 302px;
   }
   .container_herbergement_affPlus {
     padding-left: 20px;
@@ -772,4 +776,12 @@ footer {
   .container_footer {
     width: 100%;
   }
+}
+
+.red  {
+  background-color: red ;
+}
+
+.green {
+  background-color: green;
 }
