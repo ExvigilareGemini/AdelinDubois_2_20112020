@@ -1,11 +1,11 @@
 body {
-  margin: 0 0 0 52px;
+  margin: 0 0 0 50px;
   font-family: "Raleway", sans-serif;
   /* background-image: url(./src/img/canvas/Desktop\ -\ 1.png); */
 }
 
 /* // __________________________________________________________________________________________________________________________________________________ //
-//                                                      SECTIONS                                                                       
+//                                                      SECTIONS : mise en page des sections                                                                       
 // __________________________________________________________________________________________________________________________________________________ // */
 
 header {
@@ -28,7 +28,7 @@ header {
 }
 
 footer {
-  margin-left: -52px;
+  margin-left: -50px;
   padding-bottom: 50px;
   display: flex;
   justify-content: center;
@@ -36,11 +36,22 @@ footer {
 }
 
 /* // __________________________________________________________________________________________________________________________________________________ //
-//                                                      MISE EN PAGE                                                                       
+//                                                      MISE EN PAGE                                                                      
 // _____________________________________________________________________________________________________________________________________________________ // */
+
 /* _____________________________________________________________________ */
 /*********************************HEADER**********************************/
 /* _____________________________________________________________________ */
+.container_logo {
+  flex-grow: 1;
+  text-indent: 0;
+}
+
+.container_ancre {
+  display: flex;
+  flex-basis: 300px;
+  justify-content: space-around;
+}
 
 .ancre_hebergement {
   text-decoration: none;
@@ -58,32 +69,34 @@ footer {
 }
 
 .inscription {
-  flex-basis: 169px;
+  width: 170px;
   text-decoration: none;
   text-align: center;
   color: #0065fc;
   font-weight: bold;
 }
-
 /* _____________________________________________________________________ */
 /********************************RECHERCHE********************************/
 /* _____________________________________________________________________ */
 
-/* --- HEADER RECHERCHE --- */
+
+/*************************HEADER***************************/
+
 /* Mise en page du titre et texte qui suit directement */
 .recherche > h3 {
-  font-size: 22.5px;
+  font-size: 22px;
   margin: 35px 0 0 0;
 }
 .recherche > p {
-  font-size: 15.5px;
-  margin: 5px 0 0 0;
+  font-size: 15px;
+  
 }
 
-/* --- SEARCHBAR --- */
+/*************************SEARCHBAR************************/
+
 /* Mise en forme de la searchbar incluant icone, input text et le bouton */
 .searchbar {
-  margin: 21px 0 20px 0;
+  margin: 20px 0 20px 0;
   height: 50px;
 }
 .searchbar > i {
@@ -92,7 +105,7 @@ footer {
   line-height: 50px;
   font-size: 17px;
   height: 50px;
-  width: 52px;
+  width: 50px;
   background-color: #f2f2f2;
   border-radius: 15px 0 0 15px;
 }
@@ -114,23 +127,26 @@ footer {
   border-radius: 0 15px 15px 0;
   font-size: 17.5px;
 }
-
 .search_button_icon {
   visibility: hidden;
 }
 
-/* --- FILTRES --- */
+/*************************FILTRES**************************/
+
 /* Mise en page de la catégorie filtre, incluant : <p>Filtre et les 4 sélecteurs de filtres (icone + <p>) */
 .filtre {
   display: flex;
   flex-wrap: wrap;
-  margin-top: 32px;
 }
 /* Mise en page de texte : "Filtres" */
 .filtre > p {
   margin: 15px 36px 0 10px;
   font-size: 18.5px;
   font-weight: bold;
+}
+.container_filtre_selection {
+  display: flex;
+  flex-wrap: wrap;
 }
 /* Mise en page des 4 sélecteurs de filtres */
 .filtre_selection {
@@ -143,21 +159,18 @@ footer {
   margin: 10px 28px 0 0;
   align-items: center;
 }
-/* Mise en page du fond coloré de l'icone */
-.filtre_selection > .icon {
-  background-color: #deebff;
-  border-radius: 100%;
-  width: 50px;
-  height: 50px;
-  margin-left: -6px;
-}
 /* Mise en page de l'icone */
-.filtre_selection > .icon > i {
+.filtre_selection  > i {
   display: flex;
   justify-content: center;
   font-size: 20px;
   color: #0065fc;
   line-height: 50px;
+  background-color: #deebff;
+  border-radius: 100%;
+  width: 50px;
+  height: 50px;
+  margin-left: -6px;
 }
 /* Mise en page du texte dans le filtre */
 .filtre_selection > p {
@@ -171,14 +184,19 @@ footer {
   color: white;
 }
 
-/* --- FOOTER RECHERCHE --- */
+/*************************FOOTER**************************/
 
 .information {
   display: flex;
   margin-top: 20px;
 }
 
-.information > .icon {
+.information  > i {
+  display: flex;
+  justify-content: center;
+  line-height: 20px;
+  font-size: 12px;
+  color: #0065fc;
   background-color: white;
   border-radius: 100%;
   height: 22px;
@@ -188,85 +206,11 @@ footer {
   flex-shrink: 0;
 }
 
-.information > .icon > i {
-  display: flex;
-  justify-content: center;
-  line-height: 20px;
-  font-size: 12px;
-  color: #0065fc;
-}
 /* _____________________________________________________________________ */
 /********************************HEBERGEMENT******************************/
 /* _____________________________________________________________________ */
 
-/* Titre h3 situé dans les deux containers 'Hébergement' et 'Les plus populaires' : police et alignement */
-.title-alignFlex-noMargTop {
-  font-size: 22.4px;
-  font-weight: bold;
-}
-
-/* Icone box 'Les plus populaires' situé dans les deux containers : taille et alignement */
-.fa-chart-line {
-  font-size: 22.4px;
-}
-
-/* Texte "Afficher plus" dans la box 'hébergement' : police et alignement */
-.affplus {
-  font-weight: bolder;
-  font-size: 19px;
-}
-
-/* _____________________________________________________________________ */
-/********************************ACTIVITE******************************/
-/* _____________________________________________________________________ */
-.activite > h2 {
-  font-size: 22.5px;
-  margin-bottom: 22px;
-}
-
-/* _____________________________________________________________________ */
-/********************************FOOTER********************************/
-/* _____________________________________________________________________ */
-.container_footer > h2 {
-  font-weight: bold;
-}
-
-.container_footer > a {
-  text-decoration: none;
-  color: black;
-  line-height: 1.7;
-}
-
-/* // __________________________________________________________________________________________________________________________________________________ //
-//                                                      CONTAINERS                                                                       
-// _____________________________________________________________________________________________________________________________________________________ // */
-
-/* _____________________________________________________________________ */
-/*********************************HEADER**********************************/
-/* _____________________________________________________________________ */
-.container_logo {
-  flex-grow: 1;
-  text-indent: 0;
-}
-
-.container_ancre {
-  display: flex;
-  flex-basis: 300px;
-  justify-content: space-around;
-}
-
-/* _____________________________________________________________________ */
-/********************************RECHERCHE********************************/
-/* _____________________________________________________________________ */
-
-.container_filtre_selection {
-  display: flex;
-  flex-wrap: wrap;
-}
-
-/* _____________________________________________________________________ */
-/********************************HEBERGEMENT******************************/
-/* _____________________________________________________________________ */
+/*************************HEBERGEMENT***********************/
 
 .container_hebergement {
   width: 60%;
@@ -274,9 +218,18 @@ footer {
   padding: 0 30px 0 30px;
 }
 
+/* TITRE */
+
 .container_hebergement_titre {
   padding-top: 20px;
 }
+
+.hebergement_titre {
+  font-size: 22px;
+  font-weight: bold;
+}
+
+/* PINS */
 
 .container_hebergement_pin {
   display: flex;
@@ -285,131 +238,12 @@ footer {
   align-items: center;
 }
 
-.container_herbergement_affPlus {
-  height: 60px;
-}
-
-/* ______________________________________________________________________ */
-/********************************POPULAIRE*********************************/
-/* ______________________________________________________________________ */
-.container_populaire {
-  background-color: #f2f2f2;
-  margin-left: 40px;
-  min-width: 300px;
-  width: 25%;
-  padding: 0 30px 20px 30px;
-}
-
-.container_populaire_titre {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding-top: 20px;
-}
-
-.container_populaire_pin {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  width: 100%;
-}
-
-/* _____________________________________________________________________ */
-/********************************ACTIVITE*********************************/
-/* _____________________________________________________________________ */
-
-/* Contient 2 containers (large-containerèactivite), chacun contenant 2 colonnes (container-activite-pin)*/
-.big_container_activite_pin {
-  display: flex;
-  flex-wrap: wrap;
-  width: 100%;
-  justify-content: center;
-}
-
-/* Lorsque l'écran passe en dessous de 1315px, permet de wrap 2 colonnes et non 1 seule rendant le processus plus uniforme */
-.large_container_activite {
-  display: flex;
-  margin-top: 10px;
-  justify-content: space-around;
-  width: 50%;
-  min-width: 624px;
-}
-
-/* Modèle de colonnes contenant les pins  */
-.container_activite_pin {
-  display: flex;
-  flex-wrap: wrap;
-  flex-direction: column;
-  justify-content: space-between;
-  min-width: 312px; /* Largeur d'une pin_activite + 10px de margin*/
-}
-
-/* ______________________________________________________________________ */
-/********************************FOOTER************************************/
-/* ______________________________________________________________________ */
-.container_footer {
-  width: 30%;
-  display: flex;
-  flex-direction: column;
-}
-
-/* // __________________________________________________________________________________________________________________________________________________ //
-//                                                      PINS                                                                       
-// _____________________________________________________________________________________________________________________________________________________ // */
-
-/********************************HEBERGEMENT********************************/
-
 .pin_hebergement {
   background-color: white;
   width: 250px;
   height: 200px;
-  box-shadow: 5px 5px 18px rgba(0, 0, 0, 0.1);
   margin: 15px 10px 15px 0;
-  cursor: pointer;
 }
-
-/********************************POPULAIRE*********************************/
-
-.pin_populaire {
-  display: flex;
-  background-color: white;
-  width: 340px;
-  height: 150px;
-  box-shadow: 5px 5px 18px rgba(0, 0, 0, 0.1);
-  margin: 15px 0 15px 0;
-  cursor: pointer;
-}
-
-/********************************ACTIVITE*********************************/
-
-.pin_activite {
-  background-color: white;
-  width: 302px;
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-end;
-  box-shadow: 5px 5px 18px rgba(0, 0, 0, 0.1);
-  cursor: pointer;
-}
-.xl {
-  height: 445px;
-}
-.large {
-  height: 236px;
-}
-.medium {
-  height: 209px;
-}
-.small {
-  height: 195px;
-}
-.tiny {
-  height: 164px;
-}
-/* // _____________________________________________________________________________________________________________________________________________//
-//                                                      ELEMENTS DES PINS                                                                          */
-
-/********************************HEBERGEMENT********************************/
 
 .cadre {
   overflow: hidden;
@@ -437,12 +271,56 @@ footer {
   margin: 5px 0 0 0;
 }
 
-.stars {
-  padding-left: 16px;
-  margin-top: 6px;
-  font-size: 12px;
+/* AFFICHER PLUS */
+
+.container_herbergement_affPlus {
+  height: 60px;
 }
-/********************************POPULAIRE*********************************/
+
+.affplus {
+  font-weight: bolder;
+  font-size: 19px;
+}
+
+/*************************POPULAIRE**************************/
+
+.container_populaire {
+  background-color: #f2f2f2;
+  margin-left: 40px;
+  min-width: 300px;
+  width: 25%;
+  padding: 0 30px 20px 30px;
+}
+
+/* TITRE */
+
+.container_populaire_titre {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 20px;
+}
+
+.fa-chart-line {
+  font-size: 22px;
+}
+
+/* PINS */
+
+.container_populaire_pin {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 100%;
+}
+
+.pin_populaire {
+  display: flex;
+  background-color: white;
+  width: 340px;
+  height: 150px;
+  margin: 15px 0 15px 0;
+}
 
 .cadre_populaire {
   overflow: hidden;
@@ -459,18 +337,6 @@ footer {
   height: inherit;
 }
 
-.textpart > h4 {
-  padding-left: 18px;
-  font-size: 18px;
-  margin: 0 0 0 0;
-}
-
-.textpart > p {
-  padding-left: 18px;
-  font-size: 14px;
-  margin: 5px 0 0 0;
-}
-
 .content {
   display: flex;
   flex-direction: column;
@@ -479,7 +345,82 @@ footer {
   width: 50%;
 }
 
+.textpart > h4 {
+  padding-left: 18px;
+  font-size: 18px;
+  margin: 0;
+}
+
+.textpart > p {
+  padding-left: 18px;
+  font-size: 14px;
+  margin: 5px 0 0 0;
+}
+
+/* _____________________________________________________________________ */
 /********************************ACTIVITE*********************************/
+/* _____________________________________________________________________ */
+
+/* TITRE */
+
+.activite > h2 {
+  font-size: 22.5px;
+  margin-bottom: 22px;
+}
+
+/* CONTAINERS */
+
+/* Contient 2 containers (large-containerèactivite), chacun contenant 2 colonnes (container-activite-pin)*/
+.big_container_activite_pin {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  justify-content: center;
+}
+
+/* Lorsque l'écran passe en dessous de 1315px, permet de wrap 2 colonnes et non 1 seule rendant le processus plus uniforme */
+.large_container_activite {
+  display: flex;
+  margin-top: 10px;
+  justify-content: space-around;
+  width: 50%;
+  min-width: 624px;
+}
+
+/* Modèle de colonnes contenant les pins  */
+.container_activite_pin {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: space-between;
+  min-width: 312px; /* Largeur d'une pin_activite + 10px de margin*/
+}
+
+/* PINS */
+
+.pin_activite {
+  background-color: white;
+  width: 302px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+.xl {
+  height: 445px;
+}
+.large {
+  height: 236px;
+}
+.medium {
+  height: 209px;
+}
+.small {
+  height: 195px;
+}
+.tiny {
+  height: 164px;
+}
+
 .cadre_activite {
   overflow: hidden;
   border-radius: 15px 15px 15px 15px;
@@ -499,7 +440,7 @@ footer {
 .pin_activite > h3 {
   height: 56px;
   width: inherit;
-  margin: 0 0 0 0;
+  margin: 0;
   font-size: 16.5px;
   text-indent: 17px;
   line-height: 60px;
@@ -508,17 +449,45 @@ footer {
   border-radius: 0 0 15px 15px;
 }
 
-/*********************************GLOBAL**********************************/
+/* ______________________________________________________________________ */
+/********************************FOOTER************************************/
+/* ______________________________________________________________________ */
+.container_footer {
+  width: 30%;
+  display: flex;
+  flex-direction: column;
+}
 
+.container_footer > h2 {
+  font-weight: bold;
+}
+
+.container_footer > a {
+  text-decoration: none;
+  color: black;
+  line-height: 1.7;
+}
+
+/* // __________________________________________________________________________________________________________________________________________________ //
+//                                                      EFFETS VISUELLES & DRY                                                                      
+// _____________________________________________________________________________________________________________________________________________________ // */
+
+.stars {
+  padding-left: 16px;
+  margin-top: 6px;
+  font-size: 12px;
+}
 .fa-star {
   letter-spacing: -3px;
 }
-/* // __________________________________________________________________________________________________________________________________________________ //
-//                                                      EFFETS VISUELLES                                                                       
-// _____________________________________________________________________________________________________________________________________________________ // */
-
 .border_round {
   border-radius: 20px;
+}
+.shadow {
+  box-shadow: 5px 5px 18px rgba(0, 0, 0, 0.1);
+}
+.clickable {
+  cursor: pointer;
 }
 .checked {
   color: #0065fc;
@@ -531,15 +500,19 @@ footer {
 //                                                      MEDIA QUERIES                                                                       
 // _____________________________________________________________________________________________________________________________________________________ // */
 
-/* ___________________________________________________________________________________ */
-/*******************************************TABLETTE************************************/
-/* ___________________________________________________________________________________ */
+/* __________________________________________________________________________________________ */
+/*******************************************ECRAN LARGE****************************************/
+/* __________________________________________________________________________________________ */
 
 @media (min-width: 1800px) {
   .pin_hebergement {
     margin-right: 60px;
   }
 }
+
+/* __________________________________________________________________________________________ */
+/*******************************************TABLETTE*******************************************/
+/* __________________________________________________________________________________________ */
 
 @media (min-width: 550px) and (max-width: 1090px) {
   body {
@@ -625,6 +598,10 @@ footer {
     font-size: 12px;
   }
 }
+
+/* __________________________________________________________________________________________ */
+/*******************************************MOBILE*********************************************/
+/* __________________________________________________________________________________________ */
 
 @media (max-width: 550px) {
   body {
@@ -776,12 +753,4 @@ footer {
   .container_footer {
     width: 100%;
   }
-}
-
-.red  {
-  background-color: red ;
-}
-
-.green {
-  background-color: green;
 }
