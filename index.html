@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Reservia</title>
     <link rel="stylesheet" href="./style.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
@@ -14,14 +14,14 @@
 
     <!-- Header -->
     
-    <header>
+    <header class="header">
         <div class="container_logo">
             <img class="logo" src="../AdelinDubois_2_20112020/src/img/logo/Reservia.svg" alt="logo">
         </div>
-        <div class="container_ancre">
+        <nav class="container_ancre">
             <a class="ancre_hebergement" href="#hebergement">Hébergements</a>
             <a class="ancre_activite" href="#activite">Activités</a>
-        </div>
+        </nav>
 
         <a class="inscription" href="">S'inscrire</a>
 
@@ -42,8 +42,10 @@
                 <button class="search_button_icon"><i class="fas fa-search"></i> </button>
             </div>
 
-            <div class="filtre">
-                <p>Filtres</p>
+            <section class="filtre">
+                <header>
+                    <h4>Filtres</h4>
+                </header>
                 <div class="container_filtre_selection">
                     <div class="filtre_selection">
                         <i class="fas fa-money-bill-wave"></i>
@@ -62,7 +64,7 @@
                         <p>Animaux autorisés</p>
                     </div>
                 </div>
-            </div>
+            </section>
 
             <div class="information">
                 <i class="fas fa-info"></i>
@@ -72,19 +74,20 @@
     </section>
 
     <!-- Section Hebergement -->
-    <section class="hebergement" id="hebergement">
+    <div class="hebergement" id="hebergement">
 
             <!-- FlexBox hébergement -->
-            <div class="container_hebergement border_round">
+            <article class="container_hebergement border_round">
 
                 <!-- FlexBox titre hebergement -->
-                <div class="container_hebergement_titre">
+                <header class="container_hebergement_titre">
                     <h3 class="hebergement_titre">Hébergements à Marseille</h3>
-                </div>
+                </header>
+                
                 
                 <!-- FlexBox pin hebergement -->
                 <div class="container_hebergement_pin">
-                    <div class="pin_hebergement shadow clickable border_round" onclick="location.href='#';" >
+                    <a class="pin_hebergement shadow border_round" href="#">
                         <div class="cadre">
                             <img src="./src/img/hebergements/4_small/marcus-loke-WQJvWU_HZFo-unsplash.jpg" alt="pin">
                         </div>
@@ -97,8 +100,8 @@
                             <i class="fas fa-star checked"></i>
                             <i class="fas fa-star unchecked"></i>
                         </div>
-                    </div>
-                    <div class="pin_hebergement shadow clickable border_round" onclick="location.href='#';">
+                    </a>
+                    <a class="pin_hebergement shadow border_round" href="#">
                         <div class="cadre">
                             <img src="./src/img/hebergements/4_small/fred-kleber-gTbaxaVLvsg-unsplash.jpg" alt="pin">
                         </div>                    
@@ -111,8 +114,8 @@
                             <i class="fas fa-star checked"></i>
                             <i class="fas fa-star checked"></i>
                         </div>
-                    </div>
-                    <div class="pin_hebergement shadow clickable border_round" onclick="location.href='#';">
+                    </a>
+                    <a class="pin_hebergement shadow border_round" href="#">
                         <div class="cadre">
                             <img src="./src/img/hebergements/4_small/reisetopia-B8WIgxA_PFU-unsplash.jpg" alt="pin">
                         </div>                    
@@ -125,8 +128,8 @@
                             <i class="fas fa-star checked"></i>
                             <i class="fas fa-star unchecked"></i>
                         </div>
-                    </div>
-                    <div class="pin_hebergement shadow clickable border_round" onclick="location.href='#';">
+                    </a>
+                    <a class="pin_hebergement shadow border_round" href="#">
                         <div class="cadre">
                             <img src="./src/img/hebergements/4_small/annie-spratt-Eg1qcIitAuA-unsplash.jpg" alt="pin">
                         </div>                    
@@ -139,8 +142,8 @@
                             <i class="fas fa-star unchecked"></i>
                             <i class="fas fa-star unchecked"></i>
                         </div>
-                    </div>
-                    <div class="pin_hebergement shadow clickable border_round" onclick="location.href='#';">
+                    </a>
+                    <a class="pin_hebergement shadow border_round" href="#">
                         <div class="cadre">
                             <img src="./src/img/hebergements/4_small/nicate-lee-kT-ZyaiwBe0-unsplash.jpg" alt="pin">
                         </div>                    
@@ -153,8 +156,8 @@
                             <i class="fas fa-star checked"></i>
                             <i class="fas fa-star unchecked"></i>
                         </div>
-                    </div>
-                    <div class="pin_hebergement shadow clickable border_round" onclick="location.href='#';">
+                    </a>
+                    <a class="pin_hebergement shadow border_round" href="#">
                         <div class="cadre">
                             <img src="./src/img/hebergements/4_small/febrian-zakaria-M6S1WvfW68A-unsplash.jpg"  alt="pin">
                         </div>                    
@@ -167,28 +170,28 @@
                             <i class="fas fa-star checked"></i>
                             <i class="fas fa-star checked"></i>
                         </div>
-                    </div>
+                    </a>
                 </div>
 
                 <!-- FlexBox afficher plus -->
-                <div class="container_herbergement_affPlus">
+                <footer class="container_herbergement_affPlus">
                     <p class="affplus">Afficher plus</p>
-                </div>
+                </footer>
 
-            </div>
+            </article>
 
             <!-- FlexBox populaire -->
-            <div class="container_populaire border_round">
+            <article class="container_populaire border_round">
 
                     <!-- FlexBox titre populaire -->
-                    <div class="container_populaire_titre">
-                        <h3 class="title-alignFlex-noMargTop">Les plus populaires</h3>
+                    <header class="container_populaire_titre">
+                        <h3 class="populaire_titre">Les plus populaires</h3>
                         <i class="fas fa-chart-line"></i>
-                    </div>
+                    </header>
                     
                     <!-- FlexBox pin populaire -->
                     <div class="container_populaire_pin">
-                        <div class="pin_populaire shadow clickable border_round" onclick="location.href='#';">
+                        <a class="pin_populaire shadow border_round" href="#">
                             <div class="cadre_populaire">
                                 <img src="./src/img/hebergements/4_small/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg" alt="pin">
                             </div>
@@ -205,8 +208,8 @@
                                     <i class="fas fa-star checked"></i>
                                 </div>
                             </div>
-                        </div>
-                        <div class="pin_populaire border_round" onclick="location.href='#';">
+                        </a>
+                        <a class="pin_populaire shadow border_round" href="#">
                             <div class="cadre_populaire">
                                 <img src="./src/img/hebergements/4_small/aw-creative-VGs8z60yT2c-unsplash.jpg" alt="pin">
                             </div>
@@ -223,8 +226,8 @@
                                     <i class="fas fa-star unchecked"></i>
                                 </div>
                             </div>
-                        </div>         
-                        <div class="pin_populaire border_round" onclick="location.href='#';">
+                        </a>         
+                        <a class="pin_populaire shadow border_round" href="#">
                             <div class="cadre_populaire">
                                 <img src="./src/img/hebergements/4_small/febrian-zakaria-sjvU0THccQA-unsplash.jpg" alt="pin">
                             </div>
@@ -241,94 +244,97 @@
                                     <i class="fas fa-star unchecked"></i>
                                 </div>
                             </div>
-                        </div>
+                        </a>
                     </div>
                     
-            </div>
+            </article>
 
-    </section>
+    </div>
 
     <!-- Section Activité -->
 
-    <section class="activite" id="activite">
+    <article class="activite" id="activite">
         
-        <h2>Activités à Marseille</h2>
+        <header>
+            <h2>Activités à Marseille</h2>
+        </header>
+        
 
         <div class="big_container_activite_pin">
             <div class="large_container_activite">
                 <div class="container_activite_pin">           
-                    <div class="pin_activite shadow clickable xl border_round" onclick="location.href='#';">
+                    <a class="pin_activite shadow xl border_round" href="#">
                         <div class="cadre_activite">
                             <img src="./src/img/activites/4_small/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg" alt="pin">
                         </div>
                         <h3>Vieux Port</h3>
-                    </div>
+                    </a>
                 </div>    
                 <div class="container_activite_pin">  
-                    <div class="pin_activite shadow clickable large border_round" onclick="location.href='#';">
+                    <a class="pin_activite shadow large border_round" href="#">
                         <div class="cadre_activite">
                             <img src="./src/img/activites/4_small/paul-hermann-QFTrLdQIRhI-unsplash.jpg" alt="pin">
                         </div>
                         <h3>Fort de Pomègues</h3>
-                    </div>
-                    <div class="pin_activite shadow clickable tiny border_round" onclick="location.href='#';">
+                    </a>
+                    <a class="pin_activite shadow tiny border_round" href="#">
                         <div class="cadre_activite">
                             <img src="./src/img/activites/4_small/kevin-hikari-rV_Qd1l-VXg-unsplash.jpg" alt="pin">
                         </div>
                         <h3>Îles du Frioul</h3>
-                    </div>
+                    </a>
                 </div>
             </div>
             <div class="large_container_activite">
                 <div class="container_activite_pin">  
-                    <div class="pin_activite shadow clickable xl border_round" onclick="location.href='#';">
+                    <a class="pin_activite shadow xl border_round" href="#">
                         <div class="cadre_activite">
                             <img src="src/img/activites/4_small/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg" alt="pin">
                         </div>
                         <h3>Parc National des Calanques</h3>
-                    </div>
+                    </a>
                 </div>
                 <div class="container_activite_pin">  
-                    <div class="pin_activite shadow clickable small border_round" onclick="location.href='#';">
+                    <a class="pin_activite shadow small border_round" href="#">
                         <div class="cadre_activite">
                             <img src="./src/img/activites/4_small/florian-wehde-xW9e8gdotxI-unsplash.jpg" alt="pin">
                         </div>
                         <h3>Notre-Dame-de-la-Garde</h3>
-                    </div>
-                    <div class="pin_activite shadow clickable medium border_round" onclick="location.href='#';">
+                    </a>
+                    <a class="pin_activite shadow medium border_round" href="#">
                         <div class="cadre_activite">
                             <img src="./src/img/activites/4_small/lena-paulin-wH2-EJoDcV0-unsplash.jpg" alt="pin">
                         </div>
                         <h3>Parc Longchamp</h3>
-                    </div>
+                    </a>
                 </div>
             </div>
         </div>
 
-    </section>
+    </article>
 
     <!-- Footer -->
 
-    <footer id="footer">
+    <footer class="footer" id="footer">
 
-        <div class="container_footer">
+        <section class="container_footer">
             <h3>A propos</h3>
             <a href="">Fonctionnement du site</a>
             <a href="">Conditions générales de vente</a>
             <a href="">Données et confidentialité</a>
-        </div>
+        </section>
 
-        <div class="container_footer">
+        <section class="container_footer">
             <h3>Nos hébergements</h3>
             <a href="">Charte qualité</a>
             <a href="">Soumettre votre hôtel</a>
-        </div>
+        </section>
 
-        <div class="container_footer">
+        <section class="container_footer">
             <h3>Assistance</h3>
             <a href="">Centre d'aide</a>
             <a href="">Nous contacter</a>
-        </div>
+        </section>
 
 
     </footer>
