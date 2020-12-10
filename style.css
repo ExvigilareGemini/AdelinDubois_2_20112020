@@ -237,6 +237,10 @@ body {
 }
 
 .pin_hebergement {
+  display: flex;
+  flex-direction: column;
+  /* pos relative pour que le lien <a> en absolute se positionne à partir du pin_hebergement */
+  position: relative;
   background-color: white;
   width: 250px;
   height: 200px;
@@ -245,6 +249,7 @@ body {
 
 .cadre {
   overflow: hidden;
+  order: -1;
   margin: 2% 2% 0 2%;
   border-radius: 15px 15px 0 0;
   height: 114px;
@@ -276,8 +281,10 @@ body {
 }
 
 .affplus {
+  text-decoration: none;
   font-weight: bolder;
   font-size: 19px;
+  color: black;
 }
 
 /*************************POPULAIRE**************************/
@@ -319,13 +326,32 @@ body {
 
 .pin_populaire {
   display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  position: relative;
   background-color: white;
   width: 340px;
   height: 150px;
   margin: 15px 0 15px 0;
 }
 
+.pin_populaire > h4 {
+  width: 40%;
+  padding-left: 15px;
+  font-size: 17px;
+  margin: 10px 0 0 0;
+}
+
+.pin_populaire > p {
+  width: 40%;
+  padding-left: 15px;
+  font-size: 14px;
+  margin: 5px 0 0 0;
+}
+
 .cadre_populaire {
+  order: -1;
   overflow: hidden;
   margin: 5px 0 5px 5px;
   border-radius: 15px 0 0 15px;
@@ -338,26 +364,6 @@ body {
   object-fit: cover;
   width: inherit;
   height: inherit;
-}
-
-.content {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  padding: 15px 0 15px 0;
-  width: 50%;
-}
-
-.textpart > h4 {
-  padding-left: 18px;
-  font-size: 18px;
-  margin: 0;
-}
-
-.textpart > p {
-  padding-left: 18px;
-  font-size: 14px;
-  margin: 5px 0 0 0;
 }
 
 /* _____________________________________________________________________ */
@@ -407,6 +413,8 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
+  /* pos relative pour que le lien <a> en absolute se positionne à partir du pin_hebergement */
+  position: relative;
 }
 .xl {
   height: 445px;
@@ -474,10 +482,15 @@ body {
 /* // __________________________________________________________________________________________________________________________________________________ //
 //                                                      EFFETS VISUELLES & DRY                                                                      
 // _____________________________________________________________________________________________________________________________________________________ // */
-
+.pin_clic {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: 10;
+}
 .stars {
-  padding-left: 16px;
-  margin-top: 6px;
+  padding-left: 15px;
+  margin: 6px 0 15px;
   font-size: 12px;
 }
 .fa-star {
@@ -549,11 +562,11 @@ body {
     height: fit-content;
     height: -moz-max-content;
   }
-  .textpart > h4 {
-    padding-left: 10px;
+  .pin_populaire > h4 {
     font-size: 14px;
+    padding-left: 10px;
   }
-  .textpart > p {
+  .pin_populaire > p {
     font-size: 12px;
     padding-left: 10px;
   }
@@ -713,6 +726,9 @@ body {
   }
   .pin_populaire {
     width: 90%;
+  }
+  .pin_populaire > h4 {
+    font-size: 15px;
   }
   .cadre_populaire {
     width: 40%;
